@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="icm-VH-mMB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iya-vX-MJm">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="icm-VH-mMB" customClass="ViewController" customModule="Fooienpot_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cnU-Vc-3cm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEj-Ic-bdO">
+                                <rect key="frame" x="116" y="70.5" width="144" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-Ek-1nf">
+                                <rect key="frame" x="119" y="40" width="137.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-Wy-3UX">
+                                <rect key="frame" x="50" y="110.5" width="275" height="30"/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.4549019608" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Pick a Place">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickPlace:" destination="icm-VH-mMB" eventType="touchUpInside" id="kMB-eI-Ipq"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="P0L-7M-jxZ">
+                                <rect key="frame" x="50" y="190.5" width="275" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VA1-mS-2wK">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="80"/>
+                                        <color key="backgroundColor" red="0.36862745099999999" green="0.4549019608" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="5$">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPress5:" destination="icm-VH-mMB" eventType="touchUpInside" id="tCO-hI-Rpz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAg-jR-wds">
+                                        <rect key="frame" x="93.5" y="0.0" width="88" height="80"/>
+                                        <color key="backgroundColor" red="0.36862745099999999" green="0.4549019608" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="10$">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPress10:" destination="icm-VH-mMB" eventType="touchUpInside" id="4yc-5M-94d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO6-oK-xaZ">
+                                        <rect key="frame" x="186.5" y="0.0" width="88.5" height="80"/>
+                                        <color key="backgroundColor" red="0.36862745099999999" green="0.4549019608" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="15$">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPress15:" destination="icm-VH-mMB" eventType="touchUpInside" id="qvM-MH-dpf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="XVL-Rg-JZa"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HVx-xe-vl1">
+                                <rect key="frame" x="50" y="320.5" width="275" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtL-BZ-Qzo">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="80"/>
+                                        <color key="backgroundColor" red="0.36862745099999999" green="0.4549019608" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Kitchen">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPressKitchen:" destination="icm-VH-mMB" eventType="touchUpInside" id="WLK-qf-sop"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-sm-wpl">
+                                        <rect key="frame" x="93.5" y="0.0" width="88" height="80"/>
+                                        <color key="backgroundColor" red="0.36862745099999999" green="0.4549019608" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Service">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPressService:" destination="icm-VH-mMB" eventType="touchUpInside" id="Paf-h8-Eve"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gP6-jr-65e">
+                                        <rect key="frame" x="186.5" y="0.0" width="88.5" height="80"/>
+                                        <color key="backgroundColor" red="0.36862745099999999" green="0.4549019608" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Both">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPressBoth:" destination="icm-VH-mMB" eventType="touchUpInside" id="qpU-Bp-rgK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9tY-Ce-93t"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add a comment.." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eXS-UX-aXX">
+                                <rect key="frame" x="50" y="450.5" width="275" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UjI-os-9hx"/>
+                                </constraints>
+                                <color key="textColor" red="0.36862745099999999" green="0.4549019608" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heb-dS-bCl">
+                                <rect key="frame" x="50" y="560.5" width="275" height="30"/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.4549019608" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Pay with Stripe">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="payStripe:" destination="icm-VH-mMB" eventType="touchUpInside" id="2jt-2I-Xtg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705879999997" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hRe-Wy-3UX" firstAttribute="centerX" secondItem="cnU-Vc-3cm" secondAttribute="centerX" id="2TB-0K-ko5"/>
+                            <constraint firstItem="dEj-Ic-bdO" firstAttribute="centerX" secondItem="cnU-Vc-3cm" secondAttribute="centerX" id="3uB-Ln-sn6"/>
+                            <constraint firstItem="CMY-Ek-1nf" firstAttribute="top" secondItem="nIA-Xe-UQj" secondAttribute="top" constant="20" id="Awj-tt-Jtl"/>
+                            <constraint firstItem="CMY-Ek-1nf" firstAttribute="centerX" secondItem="cnU-Vc-3cm" secondAttribute="centerX" id="HoJ-9k-5c4"/>
+                            <constraint firstItem="heb-dS-bCl" firstAttribute="top" secondItem="eXS-UX-aXX" secondAttribute="bottom" constant="30" id="Iaj-iX-GDm"/>
+                            <constraint firstItem="P0L-7M-jxZ" firstAttribute="top" secondItem="hRe-Wy-3UX" secondAttribute="bottom" constant="50" id="Jro-ZH-ml3"/>
+                            <constraint firstItem="eXS-UX-aXX" firstAttribute="top" secondItem="HVx-xe-vl1" secondAttribute="bottom" constant="50" id="O2a-86-xD7"/>
+                            <constraint firstItem="nIA-Xe-UQj" firstAttribute="trailing" secondItem="heb-dS-bCl" secondAttribute="trailing" constant="50" id="RS9-SW-lpy"/>
+                            <constraint firstItem="dEj-Ic-bdO" firstAttribute="top" secondItem="CMY-Ek-1nf" secondAttribute="bottom" constant="10" id="Sph-al-JNm"/>
+                            <constraint firstItem="HVx-xe-vl1" firstAttribute="top" secondItem="P0L-7M-jxZ" secondAttribute="bottom" constant="50" id="T65-GI-psR"/>
+                            <constraint firstItem="hRe-Wy-3UX" firstAttribute="top" secondItem="dEj-Ic-bdO" secondAttribute="bottom" constant="20" id="W4n-3Q-Kj1"/>
+                            <constraint firstItem="nIA-Xe-UQj" firstAttribute="trailing" secondItem="HVx-xe-vl1" secondAttribute="trailing" constant="50" id="Wh0-wf-W2U"/>
+                            <constraint firstAttribute="trailing" secondItem="P0L-7M-jxZ" secondAttribute="trailing" constant="50" id="ZgL-vv-dvI"/>
+                            <constraint firstItem="HVx-xe-vl1" firstAttribute="leading" secondItem="nIA-Xe-UQj" secondAttribute="leading" constant="50" id="aVs-sf-BJA"/>
+                            <constraint firstItem="eXS-UX-aXX" firstAttribute="leading" secondItem="nIA-Xe-UQj" secondAttribute="leading" constant="50" id="as8-Oj-2uA"/>
+                            <constraint firstItem="P0L-7M-jxZ" firstAttribute="leading" secondItem="cnU-Vc-3cm" secondAttribute="leading" constant="50" id="hWt-J4-rax"/>
+                            <constraint firstItem="heb-dS-bCl" firstAttribute="leading" secondItem="nIA-Xe-UQj" secondAttribute="leading" constant="50" id="mHn-kU-a95"/>
+                            <constraint firstItem="nIA-Xe-UQj" firstAttribute="trailing" secondItem="eXS-UX-aXX" secondAttribute="trailing" constant="50" id="mjb-Xr-794"/>
+                            <constraint firstItem="hRe-Wy-3UX" firstAttribute="leading" secondItem="nIA-Xe-UQj" secondAttribute="leading" constant="50" id="oYP-Pt-zPo"/>
+                            <constraint firstItem="nIA-Xe-UQj" firstAttribute="trailing" secondItem="hRe-Wy-3UX" secondAttribute="trailing" constant="50" id="vrK-EN-evo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nIA-Xe-UQj"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="dEj-Ic-bdO" id="m3G-QQ-l0g"/>
+                        <outlet property="btn10" destination="dAg-jR-wds" id="Rfo-iE-sbE"/>
+                        <outlet property="btn15" destination="mO6-oK-xaZ" id="xuP-E2-qxx"/>
+                        <outlet property="btn5" destination="VA1-mS-2wK" id="Ieo-ja-EV4"/>
+                        <outlet property="btnBoth" destination="gP6-jr-65e" id="gtR-5P-0A3"/>
+                        <outlet property="btnKitchen" destination="YtL-BZ-Qzo" id="6eo-5d-As1"/>
+                        <outlet property="btnService" destination="tUZ-sm-wpl" id="eUR-TK-R80"/>
+                        <outlet property="commentText" destination="eXS-UX-aXX" id="PTS-Ah-F60"/>
+                        <outlet property="nameLabel" destination="CMY-Ek-1nf" id="wJh-od-HB2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPi-R7-AdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58.399999999999999" y="-7.6461769115442282"/>
+        </scene>
+    </scenes>
+</document>
